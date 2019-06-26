@@ -1,0 +1,26 @@
+# /etc/conf.d/blockdomaind: config file for /etc/init.d/blockdomaind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/blockdomain/blockdomain.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/blockdomaind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/blockdomaind.pid"
+
+# Where to write blockdomaind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/blockdomaind"
+
+# User and group to own blockdomaind process
+#BITCOIND_USER="blockdomain"
+#BITCOIND_GROUP="blockdomain"
+
+# Path to blockdomaind executable
+#BITCOIND_BIN="/usr/bin/blockdomaind"
+
+# Nice value to run blockdomaind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

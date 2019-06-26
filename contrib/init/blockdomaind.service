@@ -1,0 +1,26 @@
+[Unit]
+Description=BlockDomain's distributed currency daemon
+After=network.target
+
+[Service]
+User=blockdomain
+Group=blockdomain
+
+Type=forking
+PIDFile=/var/lib/blockdomaind/blockdomaind.pid
+
+ExecStart=/usr/bin/blockdomaind -daemon -pid=/var/lib/blockdomaind/blockdomaind.pid \
+          -conf=/etc/blockdomain/blockdomain.conf -datadir=/var/lib/blockdomaind
+
+ExecStop=-/usr/bin/blockdomain-cli -conf=/etc/blockdomain/blockdomain.conf \
+         -datadir=/var/lib/blockdomaind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

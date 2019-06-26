@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BlockDomain
+Comment=BlockDomain P2P Cryptocurrency
+Comment[fr]=BlockDomain, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BlockDomain, eşten eşe kriptografik sanal para birimi
+Exec=blockdomain-qt %u
+Terminal=false
+Type=Application
+Icon=blockdomain128
+MimeType=x-scheme-handler/blockdomain;
+Categories=Office;Finance;

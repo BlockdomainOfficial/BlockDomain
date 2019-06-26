@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/blockdomain_ca.qm</file>
+        <file alias="da">locale/blockdomain_da.qm</file>
+        <file alias="de">locale/blockdomain_de.qm</file>
+        <file alias="en">locale/blockdomain_en.qm</file>
+        <file alias="en_US">locale/blockdomain_en_US.qm</file>
+        <file alias="es">locale/blockdomain_es.qm</file>
+        <file alias="fr_FR">locale/blockdomain_fr_FR.qm</file>
+        <file alias="it">locale/blockdomain_it.qm</file>
+        <file alias="ja">locale/blockdomain_ja.qm</file>
+        <file alias="pt">locale/blockdomain_pt.qm</file>
+        <file alias="ro_RO">locale/blockdomain_ro_RO.qm</file>
+        <file alias="ru">locale/blockdomain_ru.qm</file>
+        <file alias="zh_TW">locale/blockdomain_zh_TW.qm</file>
+    </qresource>
+</RCC>

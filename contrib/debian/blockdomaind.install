@@ -1,0 +1,2 @@
+usr/local/bin/blockdomaind usr/bin
+usr/local/bin/blockdomain-cli usr/bin
