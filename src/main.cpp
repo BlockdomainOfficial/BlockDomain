@@ -1695,7 +1695,7 @@ int64_t GetTreasuryAward(int nHeight)
 	int64_t nSubsidy;
 	if(IsTreasuryBlock(nHeight)) {
 		if(nHeight == nStartTreasuryBlock) {
-			return 92.5 * COIN;
+			return (92.5 + 1) * COIN;
 			
 		} else {
 			if (nHeight <= 3000 && nHeight > 0) {
