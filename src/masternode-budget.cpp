@@ -521,21 +521,21 @@ void CBudgetManager::FillTreasuryBlockPayee(CMutableTransaction& txNew, CAmount 
     CAmount treasurePayment = 0;
 	
 	if (pindexPrev->nHeight <= 3000 && pindexPrev->nHeight > 0) {
-				treasurePayment = (blockValue - 1 * COIN;	
+				treasurePayment = blockValue - (1 * COIN);	
 			} else if (pindexPrev->nHeight <= 4000 && pindexPrev->nHeight > 3000) {
-				treasurePayment = blockValue - 25 * COIN;
+				treasurePayment = blockValue - (25 * COIN);
 			} else if (pindexPrev->nHeight <= 4500 && pindexPrev->nHeight > 4000) {
-				treasurePayment = blockValue - 100 * COIN;	
+				treasurePayment = blockValue - (100 * COIN);	
 			} else if (pindexPrev->nHeight <= 5000 && pindexPrev->nHeight > 4500) {
-				treasurePayment = blockValue - 250 * COIN;
+				treasurePayment = blockValue - (250 * COIN);
 			} else if (pindexPrev->nHeight <= 7000 && pindexPrev->nHeight > 5000) {
-				treasurePayment = blockValue - 175 * COIN;	
+				treasurePayment = blockValue - (175 * COIN);	
 			} else if (pindexPrev->nHeight <= 10000 && pindexPrev->nHeight > 7000) {
-				treasurePayment = blockValue - 100 * COIN;	
+				treasurePayment = blockValue - (100 * COIN);	
 			} else if (pindexPrev->nHeight <= 100000 && pindexPrev->nHeight > 10000) {
-				treasurePayment = blockValue - 75 * COIN;	
+				treasurePayment = blockValue - (75 * COIN);	
 			} else if (pindexPrev->nHeight > 100000) {
-				treasurePayment = blockValue - 50 * COIN;
+				treasurePayment = blockValue - (50 * COIN);
 			}
 			
 	if (fProofOfStake) {
