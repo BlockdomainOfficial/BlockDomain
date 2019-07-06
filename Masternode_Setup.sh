@@ -16,7 +16,7 @@ echo "${Green}I've finished upgrading! Now I need to install dependencies"
 	sudo apt-get install nano unzip git -y
 
 echo "${Green}I've finished installing dependencies! Now I'll make folders and download the wallet."
-	wget https://github.com/Blockdomainofficial/BlockDomain/releases/download/v1.0/BlockDomain-1.0.0-x86_64-pc-linux-gnu.zip
+	wget https://github.com/BlockdomainOfficial/BlockDomain/releases/download/V1.0/BlockDomain-1.0.0-x86_64-pc-linux-gnu.zip
 	unzip BlockDomain-1.0.0-x86_64-pc-linux-gnu.zip
 	chmod +x blockdomain*
 	
